@@ -46,7 +46,7 @@ Usage
 Running the Application
 The application can be executed by calling the different functions to perform various operations on the phonebook.
 
-Function Descriptions
+Function Descriptions 
 insertContact(name, phone): Adds a new contact to the phonebook.
 searchContact(term): Searches for a contact by name or phone.
 displayContacts(): Displays all contacts in the phonebook.
