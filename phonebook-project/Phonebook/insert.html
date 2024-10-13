@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insert Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Insert Contact</h2>
+    <form onsubmit="event.preventDefault(); insertContact(document.getElementById('name').value, document.getElementById('phone').value)">
+        <input type="text" id="name" placeholder="Enter Name" required>
+        <input type="text" id="phone" placeholder="Enter Phone" required>
+        <button type="submit">Insert</button>
+    </form>
+    <a href="index.html">Back to Home</a>
+</body>
+</html>

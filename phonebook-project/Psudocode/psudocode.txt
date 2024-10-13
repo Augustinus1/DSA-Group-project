@@ -1,0 +1,112 @@
+START
+
+// Initialize contacts array
+DECLARE contacts as an empty array
+
+// Main Program (Landing Page)
+DISPLAY "Welcome to the Phonebook Application"
+DISPLAY navigation options:
+    1. Insert Contact
+    2. Search Contact
+    3. Display All Contacts
+    4. Delete Contact
+    5. Update Contact
+    6. Sort Contacts (Optional)
+PROMPT user to select an option from the navigation
+
+IF user selects option 1 THEN
+    CALL insertContact()
+ELSE IF user selects option 2 THEN
+    CALL searchContact()
+ELSE IF user selects option 3 THEN
+    CALL displayContacts()
+ELSE IF user selects option 4 THEN
+    CALL deleteContact()
+ELSE IF user selects option 5 THEN
+    CALL updateContact()
+ELSE IF user selects option 6 THEN
+    CALL sortContacts()
+END IF
+
+// Insert Contact Function
+FUNCTION insertContact():
+    DISPLAY "Insert Contact"
+    PROMPT user for input: name, phone
+    IF name and phone are valid THEN
+        CREATE new contact object with name and phone
+        APPEND contact to contacts array
+        DISPLAY "Contact added successfully!"
+    ELSE
+        DISPLAY "Invalid input, please try again."
+    END IF
+END FUNCTION
+
+// Search Contact Function
+FUNCTION searchContact():
+    DISPLAY "Search Contact"
+    PROMPT user for input: name
+    CALL binarySearchContact(name)
+    IF contact is found THEN
+        DISPLAY "Contact found: Name = contact.name, Phone = contact.phone"
+    ELSE
+        DISPLAY "Contact not found"
+    END IF
+END FUNCTION
+
+// Binary Search Contact Function
+FUNCTION binarySearchContact(name):
+    CALL sortContacts() // Ensure contacts are sorted
+    SET left = 0, right = length of contacts - 1
+    WHILE left <= right DO
+        SET mid = (left + right) / 2
+        IF contacts[mid].name == name THEN
+            RETURN contacts[mid]
+        ELSE IF contacts[mid].name < name THEN
+            SET left = mid + 1
+        ELSE
+            SET right = mid - 1
+        END IF
+    END WHILE
+    RETURN null // Contact not found
+END FUNCTION
+
+// Display All Contacts Function
+FUNCTION displayContacts():
+    IF contacts array is empty THEN
+        DISPLAY "No contacts found"
+    ELSE
+        DISPLAY "All Contacts:"
+        FOR each contact in the contacts array:
+            PRINT "Name: contact.name, Phone: contact.phone"
+        END FOR
+    END IF
+END FUNCTION
+
+// Delete Contact Function
+FUNCTION deleteContact():
+    DISPLAY "Delete Contact"
+    PROMPT user for input: name
+    CALL searchContact(name)
+    IF contact is found THEN
+        REMOVE the contact from the contacts array
+        DISPLAY "Contact deleted successfully!"
+    ELSE
+        DISPLAY "Contact not found"
+    END IF
+END FUNCTION
+
+// Update Contact Function
+FUNCTION updateContact():
+    DISPLAY "Update Contact"
+    PROMPT user for input: name, new phone number
+    CALL searchContact(name)
+    IF contact is found THEN
+        UPDATE contact.phone to newPhone
+        DISPLAY "Contact updated successfully!"
+    ELSE
+        DISPLAY "Contact not found"
+    END IF
+END FUNCTION
+
+
+END
