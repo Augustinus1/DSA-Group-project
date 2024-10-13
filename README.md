@@ -4,6 +4,7 @@ Group Members
 
 
 Project Overview
+
 This project is a simple Phonebook Application implemented using an array data structure. The application allows users to insert, search, display, delete, and update contacts. It also includes an optional feature to sort contacts by name.
 
 The project simulates the core functionalities of a phonebook, demonstrating how arrays can be used to efficiently manage and manipulate data.
@@ -12,19 +13,22 @@ Features
 The Phonebook Application provides the following features:
 
 Insert Contact: Add a new contact (name and phone number) to the phonebook.
+
 Search Contact: Find a contact by name or phone number.
+
 Display All Contacts: View all contacts currently in the phonebook.
+
 Delete Contact: Remove a contact by name or phone number.
+
 Update Contact: Edit the details of an existing contact.
-Sort Contacts (Optional): Sort contacts by name for easier searching and organization.
-Data Structure: Array
-The phonebook is built using an array, where each contact is represented as an object containing:
+
 
 name: The contact's name.
 phone: The contact's phone number.
 The array structure allows for efficient access to contacts, making it straightforward to insert, delete, and update contacts. However, resizing the array when it reaches capacity may require additional memory allocation.
 
 How It Works
+
 Each operation in the application is implemented using basic array operations:
 
 Insert: Adds a new contact to the end of the array.
