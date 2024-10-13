@@ -1,10 +1,16 @@
 Group Members
 Uakengeza Mujetenga,224088327,Bachelor of informatics 
+
 Katrina Angala,224020560,Computer science
+
 Chamelda Gertze,224022024,Computer Science
+
 Uasora Hukura,222132892,Bachelor of Computer Science
+
 Chaze musunga,223105775,Bachelor of computer science
+
 Iipinge K Augustinus,223052043,bachelor of computer science
+
 
 Project Overview
 This project is a simple Phonebook Application implemented using an array data structure. The application allows users to insert, search, display, delete, and update contacts. It also includes an optional feature to sort contacts by name.
