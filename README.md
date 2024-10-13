@@ -2,13 +2,13 @@ Group Members
 
 
 
-Phonebook Application Using Linked List
+Phonebook Application
 
 Project Overview
 
 This project is a simple Phonebook Application implemented using a Linked List data structure. The application allows users to insert, search, display, delete, and update contacts. It also includes an optional feature to sort contacts by name.
 
-The project simulates the core functionalities of a phonebook, demonstrating how linked lists can be used to efficiently manage and manipulate data.
+The project simulates the core functionalities of a phonebook, demonstrating how Arrays can be used to efficiently manage and manipulate data.
 
 Features
 
