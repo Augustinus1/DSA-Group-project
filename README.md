@@ -2,7 +2,7 @@
 
 Uakengeza Mujetenga,224088327,Bachelor of informatics 
 
-Katrina Angala,224020560, Bachelor Computer science
+Katrina Angala,224020560, Bachelor Computer science 
 
 Chamelda Gertze,224022024, Bachelor of Computer Science
 
