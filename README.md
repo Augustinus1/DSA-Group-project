@@ -2,16 +2,13 @@ Group Members
 
 
 
-Phonebook Application
 
 Project Overview
+This project is a simple Phonebook Application implemented using an array data structure. The application allows users to insert, search, display, delete, and update contacts. It also includes an optional feature to sort contacts by name.
 
-This project is a simple Phonebook Application implemented using a Linked List data structure. The application allows users to insert, search, display, delete, and update contacts. It also includes an optional feature to sort contacts by name.
-
-The project simulates the core functionalities of a phonebook, demonstrating how Arrays can be used to efficiently manage and manipulate data.
+The project simulates the core functionalities of a phonebook, demonstrating how arrays can be used to efficiently manage and manipulate data.
 
 Features
-
 The Phonebook Application provides the following features:
 
 Insert Contact: Add a new contact (name and phone number) to the phonebook.
@@ -20,22 +17,20 @@ Display All Contacts: View all contacts currently in the phonebook.
 Delete Contact: Remove a contact by name or phone number.
 Update Contact: Edit the details of an existing contact.
 Sort Contacts (Optional): Sort contacts by name for easier searching and organization.
-Data Structure: Linked List
-The phonebook is built using a singly linked list, where each contact is represented as a Node containing:
+Data Structure: Array
+The phonebook is built using an array, where each contact is represented as an object containing:
 
 name: The contact's name.
 phone: The contact's phone number.
-next: A pointer to the next node in the list.
-The Linked List structure allows for dynamic memory management, making it easy to insert, delete, and update contacts without reallocating memory.
+The array structure allows for efficient access to contacts, making it straightforward to insert, delete, and update contacts. However, resizing the array when it reaches capacity may require additional memory allocation.
 
 How It Works
+Each operation in the application is implemented using basic array operations:
 
-Each operation in the application is implemented using basic linked list operations:
-
-Insert: Traverses to the end of the list and appends a new node.
-Search: Traverses the list and checks each node for a match with the search term (name or phone).
-Delete: Finds the matching node and removes it from the list by adjusting the pointers.
-Update: Finds the matching node and updates the contact's details.
+Insert: Adds a new contact to the end of the array.
+Search: Iterates through the array and checks each contact for a match with the search term (name or phone).
+Delete: Finds the matching contact and removes it by shifting the subsequent elements in the array.
+Update: Finds the matching contact and updates the contact's details.
 Sort: Uses the bubble sort algorithm to reorder the contacts based on their names.
 Usage
 Running the Application
