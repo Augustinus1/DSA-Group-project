@@ -44,7 +44,7 @@ Update: Finds the matching contact and updates the contact's details.
 Sort: Uses the bubble sort algorithm to reorder the contacts based on their names.
 Usage
 Running the Application
-The application can be executed by calling the different functions to perform various operations on the phonebook.
+The application can be executed by calling the different functions to perform various operations on the phonebook. 
 
 Function Descriptions 
 insertContact(name, phone): Adds a new contact to the phonebook.
